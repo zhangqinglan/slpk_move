@@ -18,5 +18,25 @@
     <ClCompile Include="slpk_move.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ZipHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonModify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZipHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonModify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -75,6 +75,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\work_data\C_Plus_library\jsoncpp\jsoncpp\include\json;D:\work_data\C_Plus_library\gdal-2.3.2;D:\work_data\C_Plus_library\gdal-2.3.2\apps;D:\work_data\C_Plus_library\gdal-2.3.2\gcore;D:\work_data\C_Plus_library\gdal-2.3.2\ogr;D:\work_data\C_Plus_library\gdal-2.3.2\port;D:\work_data\C_Plus_library\zlib-1.2.11\zlib;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\work_data\C_Plus_library\jsoncpp\jsoncpp\build_vs2017\lib\Debug;D:\work_data\C_Plus_library\gdal-2.3.2\apps;D:\work_data\C_Plus_library\gdal-2.3.2\gcore;D:\work_data\C_Plus_library\gdal-2.3.2\ogr;D:\work_data\C_Plus_library\gdal-2.3.2\port;D:\work_data\C_Plus_library\gdal-2.3.2;D:\work_data\C_Plus_library\zlib-1.2.11\zlib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -106,10 +108,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\work_data\C_Plus_library\geos-3.6.3\include;D:\work_data\C_Plus_library\zlib-1.2.11</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\work_data\C_Plus_library\geos-3.6.3\src;D:\work_data\C_Plus_library\zlib-1.2.11\contrib\vstudio\vc14\x64\ZlibDllDebug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>geos_c_i_d.lib;jsoncpp_d.lib;zlibwapi.lib;gdal_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -151,7 +156,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeleteProcess.cpp" />
+    <ClCompile Include="JsonModify.cpp" />
     <ClCompile Include="slpk_move.cpp" />
+    <ClCompile Include="ZipHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeleteProcess.h" />
+    <ClInclude Include="JsonModify.h" />
+    <ClInclude Include="ZipHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
