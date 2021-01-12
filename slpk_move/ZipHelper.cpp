@@ -234,6 +234,8 @@ void CollectFilesInDirToZip(zipFile zf, string strPath, string parentDir)
 		}
 		AddFileToZip(zf, fullPath, currentPath); //将文件添加到zip文件中
 	} while (_findnext(Handle, &FileInfo) == 0);//find next file
+	_findclose(Handle);//修改：（2021.01.12）
+	zipCloseFileInZip(zf);
 }
 
 int ZipHelper::CompressMore(const char * Directory, const char * DestPath, int type, int mode)
@@ -371,7 +373,7 @@ void ZipHelper::CreateZipFromDir(string dirName, string zipFileName)
 
 
 
-
+		_findclose(Handle);//修改：（2021.01.12）
 	}
 	else// is a file
 		AddFileToZip(newZipFile, FileInfo.name, dirName);

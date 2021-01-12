@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\work_data\C_Plus_library\geos-3.6.3\include;D:\work_data\C_Plus_library\zlib-1.2.11</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\work_data\opengl_study\slpk_move\slpk_move\glm;D:\work_data\C_Plus_library\geos-3.6.3\include;D:\work_data\C_Plus_library\zlib-1.2.11</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
